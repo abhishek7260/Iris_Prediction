@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-model = pickle.load(open('iris.sav', 'rb'))
+# model = pickle.load(open('iris.sav', 'rb'))
 st.title('Iris Flower Prediction using ML')
 col1, col2, col3,col4 = st.columns(4)
 with col1:
