@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 
+
 # Load the model
 model = pickle.load(open('iris.sav', 'rb'))
 
@@ -9,7 +10,6 @@ st.title('Iris Flower Prediction using ML')
 
 # Define columns for input fields
 col1, col2, col3, col4 = st.columns(4)
-
 # Input fields for Sepal Length, Sepal Width, Petal Length, and Petal Width
 with col1:
     st.text("Sepal length")
